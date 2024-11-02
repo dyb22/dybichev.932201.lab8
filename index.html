@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="static/style.css" rel="stylesheet">
+  <title>Блоки управления</title>
+ 
+</head>
+<body>
+  <div class="container">
+    <div class="blat-container">
+      <input type="text">
+      <input type="text">
+      <button onclick="moveUp(this.parentNode)">⬆️</button>
+      <button onclick="moveDown(this.parentNode)">⬇️</button>
+      <button onclick="deleteBlat(this.parentNode)">❌</button>
+    </div>
+    <div class="buttons">
+      <button onclick="addBlat()">Добавить элемент</button>
+      <button onclick="saveData()">Сохранить</button>
+    </div>
+    <div class="output" id="output"></div>
+  </div>
+
+  <script src="static/jscode.js"> </script>
+
+</body>
+</html>
